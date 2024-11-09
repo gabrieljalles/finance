@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# :pig: Finance.Ai
 
-## Getting Started
+### Links of the project
 
-First, run the development server:
+- [Figma](<https://www.figma.com/design/ndIZ9nevfZZCMxCL4lZxfQ/FSW-Finance-(LIVE)?node-id=57-1074>)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Repository](https://github.com/felipemotarocha/fullstackweek-financeai)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Framework | SubLanguage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next 14.2.16](https://nextjs.org)
+- [Typescript](https://www.typescriptlang.org)
+- [TailwindCSS](https://tailwindcss.com)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Services
 
-## Learn More
+- [ESlint](https://eslint.org)
+- [PRISMA ORM](https://www.prisma.io)
 
-To learn more about Next.js, take a look at the following resources:
+### Database
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [NeonDB Host - private](https://console.neon.tech/app/projects)
+- [PostgreSQL](https://www.prisma.io/postgres)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Libraries
 
-## Deploy on Vercel
+### Commits methods
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Initial Configs
+
+- No for src/directory and no for alias @/ when i created the next projet
+- Install prisma and init it: npm install prisma | npx prisma init
+- Create database inside schema.prisma
