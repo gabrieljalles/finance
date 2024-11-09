@@ -10,11 +10,20 @@
 
 - [Next 14.2.16](https://nextjs.org)
 - [Typescript](https://www.typescriptlang.org)
+
+##### CSS
+
 - [TailwindCSS](https://tailwindcss.com)
+- [Plugin class sorting Prettier](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+- Need Configuration file and extension
+
+##### Correction code
+
+- [ESlint](https://eslint.org)
+- Need Extension
 
 ### Services
 
-- [ESlint](https://eslint.org)
 - [PRISMA ORM](https://www.prisma.io)
 
 ### Database
