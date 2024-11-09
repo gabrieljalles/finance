@@ -25,6 +25,7 @@
 ### Services
 
 - [PRISMA ORM](https://www.prisma.io)
+- [SHADCN COMPONENTS](https://ui.shadcn.com/docs/installation/next)
 
 ### Database
 
