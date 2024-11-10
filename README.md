@@ -6,7 +6,7 @@
 
 - [Repository](https://github.com/felipemotarocha/fullstackweek-financeai)
 
-### Framework | SubLanguage
+##### Framework | SubLanguage
 
 - [Next 14.2.16](https://nextjs.org)
 - [Typescript](https://www.typescriptlang.org)
@@ -22,22 +22,24 @@
 - [ESlint](https://eslint.org)
 - Need Extension
 
-### Services
+##### Services
 
 - [PRISMA ORM](https://www.prisma.io)
 - [SHADCN COMPONENTS](https://ui.shadcn.com/docs/installation/next)
 - [CLERK - authenticatation]()
 
-### Database
+##### Database
 
 - [NeonDB Host - private](https://console.neon.tech/app/projects)
 - [PostgreSQL](https://www.prisma.io/postgres)
 
-### Libraries
+##### Libraries
 
 - [ClerkThemes](https://clerk.com/docs/customization/themes)
+- [HUSKY - Desenvolvimento](https://www.npmjs.com/package/husky)
+- [LINT/STAGED - Desenvolvimento]()
 
-### Commits methods
+##### Commits methods
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
@@ -46,3 +48,15 @@
 - No for src/directory and no for alias @/ when i created the next projet
 - Install prisma and init it: npm install prisma | npx prisma init
 - Create database inside schema.prisma
+
+### How to configure Husky and lint staged
+
+##### :mag_right: Objetivos
+
+- O lint-staged é usado para somente executar comandos em arquivos que estão preparados para o commit. Isso evita que o prettier ou qualquer biblioteca de organização rode em todos os arquivos ao mesmo tempo.
+
+- O código para colar, é usado para procurar arquivos de extensão .ts ou .tsx e rodar o prettier.
+
+  1 - npx husky init
+  2 - in the root of the project, create a file with the filename .lintstagedrc.json
+  3 - then, paste it : { "\*.ts?(x)": ["eslint --fix", "prettier --write"] } without the first \.
