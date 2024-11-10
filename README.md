@@ -49,7 +49,11 @@
 - Install prisma and init it: npm install prisma | npx prisma init
 - Create database inside schema.prisma
 
-### How to configure Husky and lint staged
+### How to configure Husky, lint staged and commit-msg
+
+- npm i -D git-commit-msg-linter
+- npm i -D lint-staged
+- npm i -D husky
 
 ##### :mag_right: Objetivos
 
@@ -57,6 +61,12 @@
 
 - O código para colar, é usado para procurar arquivos de extensão .ts ou .tsx e rodar o prettier.
 
+- o git-commit-msg-linter força a inserção correta do conventional commits ao realizer um commit.
+
+- Além disso, você precisa conectar o Husky ao git-commit-msg (conventional commits) para que os dois trabalhem juntos.
+
   1 - npx husky init
   2 - in the root of the project, create a file with the filename .lintstagedrc.json
   3 - then, paste it : { "\*.ts?(x)": ["eslint --fix", "prettier --write"] } without the first \.
+  4 - create a file inside .husky commit-msg and put the code .git/hooks/commit-msg $1 inside it
+  5 -
