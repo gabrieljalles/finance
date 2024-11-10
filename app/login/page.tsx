@@ -1,8 +1,15 @@
 import Image from "next/image";
 import { Button } from "../_components/ui/button";
 import { LogInIcon } from "lucide-react";
+import { SignInButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-const LoginPage = () => {
+const LoginPage = async () => {
+  const { userId } = await auth();
+  if (userId) {
+    redirect("/");
+  }
   return (
     <div className="flex h-full w-full items-center justify-center bg-primary">
       <div className="grid min-h-[90%] min-w-[90%] grid-cols-2 overflow-hidden rounded-3xl bg-background shadow-2xl">
@@ -21,10 +28,12 @@ const LoginPage = () => {
             para monitorar suas movimentações, e oferecer insights
             personalizados, facilitando o controle do seu orçamento.
           </p>
-          <Button variant="outline">
-            <LogInIcon className="mr-2" />
-            Fazer login ou criar conta
-          </Button>
+          <SignInButton>
+            <Button variant="outline">
+              <LogInIcon className="mr-2" />
+              Fazer login ou criar conta
+            </Button>
+          </SignInButton>
         </div>
 
         {/* DIREITA */}

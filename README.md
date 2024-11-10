@@ -26,6 +26,7 @@
 
 - [PRISMA ORM](https://www.prisma.io)
 - [SHADCN COMPONENTS](https://ui.shadcn.com/docs/installation/next)
+- [CLERK - authenticatation]()
 
 ### Database
 
@@ -33,6 +34,8 @@
 - [PostgreSQL](https://www.prisma.io/postgres)
 
 ### Libraries
+
+- [ClerkThemes](https://clerk.com/docs/customization/themes)
 
 ### Commits methods
 
